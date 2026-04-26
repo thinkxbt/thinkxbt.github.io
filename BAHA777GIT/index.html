@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>БАХА АВТО 777</title>
+  <meta name="description" content="БАХА АВТО 777 — каталог автомобилей по Кыргызстану.">
+  <meta name="theme-color" content="#090b11">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="home">
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">
+            <img class="brand-logo" src="./assets/baha-777-logo.png" alt="БАХА АВТО 777">
+          </span>
+          <span class="brand-copy">
+            <strong>БАХА АВТО 777</strong>
+            <small>Главная</small>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <a class="primary-button" href="https://wa.me/79000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="primary-button" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid hero-grid-single">
+        <section class="hero-copy">
+          <p class="eyebrow">«Ат сыры ээсине маалым, авто сыры бизге маалым.»</p>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="section filters-section" id="catalog">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Каталог</p>
+            <h2>Автомобили</h2>
+          </div>
+        </div>
+
+        <div class="search-panel">
+          <div class="search-toolbar">
+            <label class="search-main">
+              <span>Поиск</span>
+              <input id="searchInput" type="search" placeholder="Марка, модель, ключевое слово">
+            </label>
+            <button class="filter-toggle" id="filterToggle" type="button">Фильтр</button>
+          </div>
+
+          <div class="advanced-filters" id="advancedFilters">
+            <label>
+              <span>Марка</span>
+              <select id="brandSelect"></select>
+            </label>
+
+            <label>
+              <span>Год от</span>
+              <select id="yearSelect"></select>
+            </label>
+
+            <label>
+              <span>Цена до</span>
+              <select id="priceSelect"></select>
+            </label>
+
+            <label>
+              <span>Объём</span>
+              <select id="engineSelect"></select>
+            </label>
+
+            <label>
+              <span>Топливо</span>
+              <select id="fuelSelect"></select>
+            </label>
+
+            <label>
+              <span>Регион</span>
+              <select id="regionSelect"></select>
+            </label>
+
+            <label>
+              <span>Коробка</span>
+              <select id="transmissionSelect"></select>
+            </label>
+
+            <button class="filter-reset" id="resetFilters" type="button">Сбросить</button>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="carsGrid"></div>
+      </section>
+    </main>
+
+    <footer class="mobile-nav">
+      <a class="is-active" href="./index.html"><span>Главное</span></a>
+      <a href="./favorites.html"><span>Избранное</span></a>
+      <a href="./add-listing.html"><span>Добавить</span></a>
+      <a href="./chat.html"><span>Чат</span></a>
+      <a href="./cabinet.html"><span>Кабинет</span></a>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

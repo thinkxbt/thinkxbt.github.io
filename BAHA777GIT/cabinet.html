@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кабинет | БАХА АВТО 777</title>
+  <meta name="description" content="Кабинет и регистрация в БАХА АВТО 777.">
+  <meta name="theme-color" content="#090b11">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="cabinet">
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">
+            <img class="brand-logo" src="./assets/baha-777-logo.png" alt="БАХА АВТО 777">
+          </span>
+          <span class="brand-copy">
+            <strong>БАХА АВТО 777</strong>
+            <small>Кабинет</small>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <a class="primary-button" href="https://wa.me/79000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="primary-button" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid hero-grid-secondary">
+        <section class="hero-copy">
+          <p class="eyebrow">Авторизация</p>
+          <h1 class="page-title">Кабинет пользователя</h1>
+        </section>
+
+        <aside class="hero-panel">
+          <article class="hero-card hero-card-accent" id="authSummary">
+            <span class="metric-label">Статус</span>
+            <strong>Гость</strong>
+          </article>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Форма</p>
+            <h2>Регистрация</h2>
+          </div>
+        </div>
+
+        <form class="market-form market-form-narrow" id="accountForm">
+          <div class="form-grid form-grid-single">
+            <label>
+              <span>Логин</span>
+              <input name="login" type="text" required placeholder="Введите логин">
+            </label>
+
+            <label>
+              <span>Пароль</span>
+              <input name="password" type="password" required placeholder="Введите пароль">
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit">Зарегистрироваться</button>
+            <button class="inline-button" id="logoutButton" type="button" hidden>Выйти</button>
+          </div>
+
+          <p class="form-message" id="authMessage"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="mobile-nav">
+      <a href="./index.html"><span>Главное</span></a>
+      <a href="./favorites.html"><span>Избранное</span></a>
+      <a href="./chat.html"><span>Чат</span></a>
+      <a class="is-active" href="./cabinet.html"><span>Кабинет</span></a>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
