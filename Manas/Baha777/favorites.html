@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Избранное | БАХА АВТО 777</title>
+  <meta name="description" content="Избранные объявления БАХА АВТО 777.">
+  <meta name="theme-color" content="#090b11">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="favorites">
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">
+            <img class="brand-logo" src="./assets/baha-777-logo.png" alt="БАХА АВТО 777">
+          </span>
+          <span class="brand-copy">
+            <strong>БАХА АВТО 777</strong>
+            <small>Избранное</small>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <a class="primary-button" href="https://wa.me/79000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="primary-button" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid hero-grid-secondary">
+        <section class="hero-copy">
+          <p class="eyebrow">Подборка</p>
+          <h1 class="page-title">Избранные объявления</h1>
+          <p class="page-copy">Все сохранённые автомобили собираются здесь автоматически. Регистрация не нужна, данные хранятся прямо в браузере.</p>
+        </section>
+
+        <aside class="hero-panel">
+          <article class="hero-card hero-card-accent">
+            <span class="metric-label">Сохранено</span>
+            <strong id="favoritesCount">0 объявлений</strong>
+            <p id="favoritesMeta">Добавьте понравившиеся объявления на главной странице.</p>
+          </article>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Список</p>
+            <h2>Мои объявления</h2>
+          </div>
+          <div class="catalog-summary">
+            <span>Работает без регистрации</span>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="favoritesGrid"></div>
+      </section>
+    </main>
+
+    <footer class="mobile-nav">
+      <a href="./index.html"><span>Главное</span></a>
+      <a class="is-active" href="./favorites.html"><span>Избранное</span></a>
+      <a href="./chat.html"><span>Чат</span></a>
+      <a href="./cabinet.html"><span>Кабинет</span></a>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

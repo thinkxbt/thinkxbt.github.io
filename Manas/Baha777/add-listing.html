@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавить объявление | БАХА АВТО 777</title>
+  <meta name="description" content="Добавление объявления в БАХА АВТО 777.">
+  <meta name="theme-color" content="#090b11">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="add-listing">
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">
+            <img class="brand-logo" src="./assets/baha-777-logo.png" alt="БАХА АВТО 777">
+          </span>
+          <span class="brand-copy">
+            <strong>БАХА АВТО 777</strong>
+            <small>Добавить объявление</small>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <a class="primary-button" href="https://wa.me/79000000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="primary-button" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </nav>
+
+      <div class="hero-grid hero-grid-single">
+        <section class="hero-copy">
+          <p class="eyebrow">Публикация</p>
+          <h1 class="page-title">Новое объявление</h1>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Форма</p>
+            <h2>Заполните данные</h2>
+          </div>
+        </div>
+
+        <form class="market-form" id="addListingForm">
+          <div class="form-grid">
+            <label>
+              <span>Марка</span>
+              <input name="brand" type="text" required placeholder="Например, Toyota">
+            </label>
+
+            <label>
+              <span>Модель</span>
+              <input name="model" type="text" required placeholder="Например, Camry">
+            </label>
+
+            <label>
+              <span>Год</span>
+              <input name="year" type="number" required min="1990" max="2035" placeholder="2022">
+            </label>
+
+            <label>
+              <span>Цена (KGS)</span>
+              <input name="priceKgs" type="number" required min="1" placeholder="2500000">
+            </label>
+
+            <label>
+              <span>Объём двигателя</span>
+              <input name="engine" type="number" step="0.1" required min="0.6" placeholder="2.0">
+            </label>
+
+            <label>
+              <span>Пробег (км)</span>
+              <input name="mileage" type="number" required min="0" placeholder="45000">
+            </label>
+
+            <label>
+              <span>Топливо</span>
+              <select name="fuel" required>
+                <option value="Бензин">Бензин</option>
+                <option value="Дизель">Дизель</option>
+                <option value="Гибрид">Гибрид</option>
+                <option value="Электро">Электро</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Коробка</span>
+              <select name="transmission" required>
+                <option value="Автомат">Автомат</option>
+                <option value="Механика">Механика</option>
+                <option value="Вариатор">Вариатор</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Привод</span>
+              <select name="drive" required>
+                <option value="Передний">Передний</option>
+                <option value="Задний">Задний</option>
+                <option value="Полный">Полный</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Цвет</span>
+              <input name="color" type="text" required placeholder="Белый">
+            </label>
+
+            <label>
+              <span>Регион</span>
+              <input name="region" type="text" required placeholder="Бишкек">
+            </label>
+
+            <label>
+              <span>Фото (URL)</span>
+              <input name="image" type="url" placeholder="https://...">
+            </label>
+          </div>
+
+          <label>
+            <span>Описание</span>
+            <textarea name="description" required placeholder="Кратко опишите состояние автомобиля, комплектацию и преимущества."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit">Опубликовать</button>
+            <a class="inline-button" href="./index.html#catalog">На главную</a>
+          </div>
+
+          <p class="form-message" id="listingFormMessage"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="mobile-nav">
+      <a href="./index.html"><span>Главное</span></a>
+      <a href="./favorites.html"><span>Избранное</span></a>
+      <a class="is-active" href="./add-listing.html"><span>Добавить</span></a>
+      <a href="./chat.html"><span>Чат</span></a>
+      <a href="./cabinet.html"><span>Кабинет</span></a>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
